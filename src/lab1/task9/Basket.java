@@ -17,13 +17,13 @@ public class Basket {
     public int getWeight(){
         int weight = 0;
         for(Ball b : balls){
-            weight += b.getWeight();
+            weight += b.weight();
         }
         return weight;
     }
 
     void sortBalls(){
-        balls.sort(Comparator.comparingInt(a -> a.getColor().ordinal()));
+        balls.sort(Comparator.comparingInt(a -> a.color().ordinal()));
         isSorted = true;
     }
 
@@ -51,7 +51,7 @@ public class Basket {
                 coloredBalls.add(current);
                 if(++i == balls.size()) break;
                 current = balls.get(i);
-            }while(current.getColor().equals(color));
+            }while(current.color().equals(color));
         }
         return coloredBalls;
     }
@@ -65,7 +65,7 @@ public class Basket {
             int mid = left + (right - left) / 2;
             Ball midElement = list.get(mid);
 
-            int comparison = Integer.compare(midElement.getColor().ordinal(), target.ordinal());
+            int comparison = Integer.compare(midElement.color().ordinal(), target.ordinal());
 
             if (comparison == 0) {
                 // If the current element is equal to the target, update the result

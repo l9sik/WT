@@ -22,10 +22,10 @@ class BasketTest {
         int size = r.nextInt(1, 100);
         for (int i = 0; i < size; i++){
             Ball ball = randomBall(r);
-            if (ball.getColor().equals(Color.BLUE)){
+            if (ball.color().equals(Color.BLUE)){
                 blueCount++;
             }
-            totalWeight += ball.getWeight();
+            totalWeight += ball.weight();
             basket.addBall(ball);
         }
     }
