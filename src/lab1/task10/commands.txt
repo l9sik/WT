@@ -1,0 +1,9 @@
+PS D:\develop\university\WT\part2-labs\untitled\src> jar cvf .\lab1\task9\task9.jar .\lab1\task9\*.class
+added manifest
+adding: lab1/task9/Ball.class(in = 1259) (out= 611)(deflated 51%)
+adding: lab1/task9/Basket.class(in = 2761) (out= 1443)(deflated 47%)
+adding: lab1/task9/Color.class(in = 966) (out= 543)(deflated 43%)
+adding: lab1/task9/Main.class(in = 1071) (out= 656)(deflated 38%)
+
+PS D:\develop\university\WT\part2-labs\untitled\src\lab1\task9> java -jar .\task9.jar
+[Ball[color=BLUE, weight=31], Ball[color=BLUE, weight=60], Ball[color=BLUE, weight=30], Ball[color=BLUE, weight=10], Ball[color=BLUE, weight=35], Ball[color=BLUE, weight=80], Ball[color=BLUE, weight=48], Ball[color=BLUE, weight=95], Ball[color=BLUE, weight=32], Ball[color=BLUE, weight=8], Ball[color=BLUE, weight=95]]

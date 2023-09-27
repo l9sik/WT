@@ -13,8 +13,7 @@ public class Main {
             Ball ball = randomBall(r);
             basket.addBall(ball);
         }
-
-
+        System.out.println(basket.getBallByColor(Color.BLUE));
     }
 
     static Ball randomBall(Random r){
